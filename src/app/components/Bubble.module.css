@@ -1,0 +1,46 @@
+.bubble {
+    position: absolute;
+    background-color: #751cc7; /* Adjust the color to your preference */
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: float 6s infinite;
+  }
+  
+  .bubble:nth-child(1) {
+    width: 380px;
+    height: 380px;
+    top: -1%;
+    left: -6%;
+    animation-delay: 0s;
+  }
+  
+  .bubble:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    top: 30%;
+    left: 80%;
+    animation-delay: 2s;
+  }
+  
+  .bubble:nth-child(3) {
+    width: 80px;
+    height: 80px;
+    top: 40%;
+    left: 20%;
+    animation-delay: 4s;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+    50% {
+      transform: translateY(-20px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 0.7;
+    }
+  }
