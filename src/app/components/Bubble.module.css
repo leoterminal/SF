@@ -1,46 +1,119 @@
 .bubble {
-    position: absolute;
-    background-color: #751cc7; /* Adjust the color to your preference */
-    opacity: 0.8;
-    border-radius: 50%;
-    animation: float 6s infinite;
+  position: absolute;
+  background-color: #8B4FBd; /* Adjust the color to your preference */
+  opacity: 0.8;
+  border-radius: 50%;
+  background: radial-gradient(circle at right, #8B4FBd, #4A00E0);
+  animation: float 6s infinite;
+}
+
+.bubble:nth-child(1) {
+  width: 380px;
+  height: 380px;
+  top: -1%;
+  left: -6%;
+  animation-delay: 0s;
+}
+
+.bubble:nth-child(2) {
+  width: 80px;
+  height: 80px;
+  top: 20%;
+  left: 75%;
+  animation-delay: 2s;
+}
+
+.bubble:nth-child(3) {
+  width: 80px;
+  height: 80px;
+  top: 50%;
+  left: 20%;
+  animation-delay: 4s;
+}
+
+.bubble:nth-child(4) {
+  width: 380px;
+  height: 380px;
+  top: 20%;
+  right: -8%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0.7;
   }
-  
-  .bubble:nth-child(1) {
-    width: 380px;
-    height: 380px;
-    top: -1%;
-    left: -6%;
-    animation-delay: 0s;
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.5;
   }
-  
-  .bubble:nth-child(2) {
-    width: 80px;
-    height: 80px;
-    top: 30%;
-    left: 80%;
-    animation-delay: 2s;
+  100% {
+    transform: translateY(0);
+    opacity: 0.7;
   }
-  
+}
+
+/* Adjust bubble sizes for smaller screens */
+@media (max-width: 1200px) {
+  .bubble:nth-child(1),
+  .bubble:nth-child(4) {
+    width: 300px;
+    height: 300px;
+  }
+  .bubble:nth-child(2),
   .bubble:nth-child(3) {
-    width: 80px;
-    height: 80px;
-    top: 40%;
-    left: 20%;
-    animation-delay: 4s;
+    width: 60px;
+    height: 60px;
   }
-  
-  @keyframes float {
-    0% {
-      transform: translateY(0);
-      opacity: 0.7;
-    }
-    50% {
-      transform: translateY(-20px);
-      opacity: 0.5;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 0.7;
-    }
+  .bubble:nth-child(2){
+    top: 20%;
+    left: 70%;
   }
+}
+
+@media (max-width: 768px) {
+  .bubble:nth-child(1),
+  .bubble:nth-child(4) {
+    width: 200px;
+    height: 200px;
+  }
+  .bubble:nth-child(2),
+  .bubble:nth-child(3) {
+    width: 40px;
+    height: 40px;
+  }
+
+  .bubble:nth-child(1){
+    top: -6%;
+    left: -2%;
+  }
+
+  .bubble:nth-child(2){
+    top: 60%;
+    left: 50%;
+  }
+
+  .bubble:nth-child(3){
+    top: 8%;
+    left: 30%;
+  }
+  .bubble:nth-child(4){
+    top: 52%;
+    right: -12%;
+    z-index: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .bubble:nth-child(1),
+  .bubble:nth-child(4) {
+    width: 150px;
+    height: 150px;
+  }
+  .bubble:nth-child(2),
+  .bubble:nth-child(3) {
+    width: 30px;
+    height: 30px;
+  }
+}

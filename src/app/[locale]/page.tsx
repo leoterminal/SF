@@ -1,17 +1,23 @@
+
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import React from 'react'
 import { IoIosArrowDown } from 'react-icons/io'
 import Bubble from "../components/Bubble";
 import styles from "./Home.module.css";
+import ServicesSection from './(homepageSections)/ServicesSection';
+import OfferSection from './(homepageSections)/OfferSection';
+import FaqSection from './(homepageSections)/FaqSection';
 
 const Home = () => {
     const t =useTranslations('Hero')
   return (
     // <div className='min-h-screen flex items-center justify-center text-5xl'>{t('title')}</div>
+    <>
 
     <main className="flex min-h-screen flex-col items-center justify-start gap-5  bg-[#f7f3ff]">
       <div className={styles.bubbleContainer}>
+        <Bubble />
         <Bubble />
         <Bubble />
         <Bubble />
@@ -26,7 +32,7 @@ const Home = () => {
         from Africa seamlessly and securely
       </p>
 
-      <div className="flex lg:flex-row flex-col max-w-[550px] items-center gap-6 mt-[50px] ">
+      <div className="flex lg:flex-row flex-col max-w-[550px] items-center gap-6 mt-[50px] z-10">
         <div className="flex items-center gap-4 bg-primary_purple rounded-[30px] shadow-xl text-xl font-semibold hover:shadow-none text-white py-3 px-24 lg:px-12 lg:w-fit w-full  cursor-pointer">
           <div className="  ">Send Money</div>
           <IoIosArrowDown />
@@ -37,26 +43,23 @@ const Home = () => {
           <IoIosArrowDown />
         </div>
       </div>
-
-      <div className="mt-8 text-center">
+{/* 
+      <div className="lg:mt-8  mt-28 text-center">
         <p className="text-primary_green lg:text-xl text-lg font-semibold ">
           PAY FOR ESSENTIAL SERVICES
         </p>
         <h2 className="font-semibold lg:text-5xl text-3xl">
           Services we render
         </h2>
-      </div>
+      </div> 
 
-      <section className="bg-white min-h-[90vh] w-full relative">
-        <Image
-          src=" https://res.cloudinary.com/dzwnf9mjr/image/upload/v1718713898/image_44_bvaaps.png"
-          alt="bg"
-          width={100}
-          height={100}
-          className="absolute h-full top-0 left-0 w-full"
-        />
-      </section>
+     
+     <ServicesSection /> */}
+    <OfferSection />
+    <FaqSection />
     </main>
+
+      </>
   )
 }
 
