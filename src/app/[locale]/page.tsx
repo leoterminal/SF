@@ -12,7 +12,6 @@ import FaqSection from './(homepageSections)/FaqSection';
 const Home = () => {
     const t =useTranslations('Hero')
   return (
-    // <div className='min-h-screen flex items-center justify-center text-5xl'>{t('title')}</div>
     <>
 
     <main className="flex min-h-screen flex-col items-center justify-start gap-5  bg-[#f7f3ff]">

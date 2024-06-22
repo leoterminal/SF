@@ -2,6 +2,8 @@ import createMiddleware from 'next-intl/middleware';
  
 export default createMiddleware({
   // A list of all locales that are supported
+  //en ==English
+  //tr === Turkeyi
   locales: ['en', 'tr'],
  
   // Used when no locale matches
