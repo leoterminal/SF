@@ -8,11 +8,11 @@ import styles from "./Home.module.css";
 import ServicesSection from './(homepageSections)/ServicesSection';
 import OfferSection from './(homepageSections)/OfferSection';
 import FaqSection from './(homepageSections)/FaqSection';
+import ContactSection from './(homepageSections)/ContactSection';
 
 const Home = () => {
-    const t =useTranslations('Hero')
+    const t =useTranslations('HeroSection')
   return (
-    // <div className='min-h-screen flex items-center justify-center text-5xl'>{t('title')}</div>
     <>
 
     <main className="flex min-h-screen flex-col items-center justify-start gap-5  bg-[#f7f3ff]">
@@ -24,22 +24,20 @@ const Home = () => {
         <Bubble />
       </div>
       <h1 className="lg:text-6xl text-4xl font-extrabold lg:max-w-[550px] max-w-[400px] text-center mt-24">
-        <span className="text-primary_purple">{t('CTA')}</span> a New Money
-        Experience
+        <span className="text-primary_purple">{t('cta')}</span> {t('title')}
       </h1>
       <p className="text-[#708090] lg:text-2xl text-lg text-center lg:max-w-[500px] max-w-[350px] p-2">
-        Supporting Africa's diaspora in Turkiye in making and receiving payments
-        from Africa seamlessly and securely
+      {t('description')}
       </p>
 
       <div className="flex lg:flex-row flex-col max-w-[550px] items-center gap-6 mt-[50px] z-10">
-        <div className="flex items-center gap-4 bg-primary_purple rounded-[30px] shadow-xl text-xl font-semibold hover:shadow-none text-white py-3 px-24 lg:px-12 lg:w-fit w-full  cursor-pointer">
-          <div className="  ">Send Money</div>
+        <div className="flex items-center justify-center gap-4 bg-primary_purple rounded-[30px] shadow-xl text-xl font-semibold hover:shadow-none text-white py-3 px-24 lg:px-12 lg:w-fit w-full  cursor-pointer">
+          <div className="  ">{t('send_money')}</div>
           <IoIosArrowDown />
         </div>
 
-        <div className="flex items-center gap-4 bg-white rounded-[30px] shadow-xl hover:shadow-none text-xl font-semibold text-primary_purple   py-3 px-20 lg:px-8 lg:w-fit w-full cursor-pointer">
-          <div className="">Receive Money</div>
+        <div className="flex items-center justify-center gap-4 bg-white rounded-[30px] shadow-xl hover:shadow-none text-xl font-semibold text-primary_purple   py-3 px-20 lg:px-8 lg:w-fit w-full cursor-pointer">
+          <div className="">{t('receive_money')}</div>
           <IoIosArrowDown />
         </div>
       </div>
@@ -57,6 +55,7 @@ const Home = () => {
      <ServicesSection /> */}
     <OfferSection />
     <FaqSection />
+    <ContactSection />
     </main>
 
       </>

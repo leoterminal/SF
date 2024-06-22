@@ -8,8 +8,10 @@ import { Dialog } from "@headlessui/react";
 import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 
 const Navbar = () => {
+  const t =useTranslations('NavBar')
 //   const { data: session }: any = useSession();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   // const handleClick = useCallback(()=>)
@@ -75,7 +77,7 @@ const Navbar = () => {
               <Image
                 src="https://res.cloudinary.com/dzwnf9mjr/image/upload/v1718713898/SFx_Brand_Identity_Design_2_rdvr5v.png"
                 width={100}
-                height={80}
+                height={100}
                 alt="SFX logo"
               />
             </Link>
@@ -102,7 +104,7 @@ const Navbar = () => {
                   }}
                   className="hidden lg:block lg:text-sm lg:font-semibold lg:text-primary_purple  px-10 py-3 rounded-[30px] border border-primary_purple"
                 >
-                  Sign in
+                  {t('sign_in')}
                 </button>
 
                 <div className="flex">

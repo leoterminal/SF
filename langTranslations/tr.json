@@ -1,11 +1,41 @@
 {
-    "Index": {
-      "title": "Wola Odudu"
+  "NavBar":{
+  "sign_in" : "Giriş yap"
+},
+  "HeroSection": {
+    "cta": "Keşfet",
+    "title": "Yeni Bir Para Deneyimi",
+    "description": "Türkiye'deki Afrika diasporasına Afrika'dan ödeme almak ve göndermek konusunda sorunsuz ve güvenli destek sağlıyor",
+    "receive_money": "Para Al",
+    "send_money": "Para Gönder"    
+  },
+  "Offers": {
+    "cta": "SUNDUĞUMUZ ÖZELLİKLER",
+    "title": "Bizim Tekliflerimiz",
+    "learn_more": "Daha Fazla Öğren",
+    "feature1": {
+      "image": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718958497/image_43_vwcl47.png",
+      "title": "BASİTLEŞTİRİLMİŞ TİCARET",
+      "subtitle": "Tezgah Üstü (OTC)",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet malesuada est. Morbi eu velit ex. Maecenas eget accumsan nibh, sed ultricies lacus. Sed luctus quam eu aliquam lacinia.",
+      "bgColor": "primary_brown",
+      "dotColor": "#b92d6c"
     },
-    
-    "Hero": {
-      "CTA":"Tene",
-      "title": "Chodu du"
+    "feature2": {
+      "image": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718958497/image_46_fcwmak.png",
+      "title": "BASİTLEŞTİRİLMİŞ TİCARET",
+      "subtitle": "Tezgah Üstü (OTC)",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet malesuada est. Morbi eu velit ex. Maecenas eget accumsan nibh, sed ultricies lacus. Sed luctus quam eu aliquam lacinia.",
+      "bgColor": "primary_green",
+      "dotColor": "#32cd32"
+    },
+    "feature3": {
+      "image": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718958498/image_47_fov33t.png",
+      "title": "BASİTLEŞTİRİLMİŞ TİCARET",
+      "subtitle": "Tezgah Üstü (OTC)",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet malesuada est. Morbi eu velit ex. Maecenas eget accumsan nibh, sed ultricies lacus. Sed luctus quam eu aliquam lacinia.",
+      "bgColor": "primary_purple",
+      "dotColor": "#8c52ff"
     }
-
   }
+}
