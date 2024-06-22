@@ -74,7 +74,7 @@ const FaqSection = () => {
           className="overflow-x-hidden lg:py-[92px] py-10"
         >
           <div className=" max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto flex flex-col lg:flex-row justify-center gap-6 items-center">
-            <div className="lg:w-1/4 w-full gap-3 bg-white rounded-lg py-8 px-4 flex lg:flex-col flew-row lg:overflow-x-hidden overflow-x-auto text-sm lg:text-base">
+            <div className="lg:w-1/4 w-full gap-3 bg-white rounded-lg lg:py-8 py-4 px-4 flex lg:flex-col flew-row lg:overflow-x-hidden overflow-x-auto text-sm lg:text-base">
                 <div className='border border-primary_purple text-primary_purple font-semibold h-16 w-full flex items-center justify-center rounded-lg px-4'> 
                 GENERAL</div>
                 <div className='border border-primary_purple text-primary_purple font-semibold h-16 min-w-fit flex items-center justify-center rounded-lg px-4'> 

@@ -115,7 +115,7 @@ const OfferSection = () => {
                   key={index}
                   className={`w-5 h-5 rounded-md cursor-pointer ${selectedOfferIndex === index ? `
                   lg:w-5 w-14 lg:h-14 h-5 bg-${offers[selectedOfferIndex].bgColor}` : 'bg-gray-400'}`}
-                style={{ backgroundColor: offers[selectedOfferIndex].dotColor }}
+                //style={{ backgroundColor: offers[selectedOfferIndex].dotColor }}
                   onClick={() => handleDotClick(index)}
                   onMouseEnter={() => setIsPaused(true)}
                   onMouseLeave={() => setIsPaused(false)}
