@@ -117,7 +117,7 @@ const FaqSection = () => {
                     selectedCategory === category
                       ? "bg-primary_purple text-white font-semibold"
                       : "border-primary_purple text-primary_purple"
-                  } h-16 w-fit flex items-center justify-center text-nowrap rounded-lg px-6 cursor-pointer`}
+                  } h-16 lg:w-full w-fit flex items-center justify-center text-nowrap rounded-lg px-6 cursor-pointer`}
                   onClick={() => setSelectedCategory(category)}
                 >
                   {category.toUpperCase()}
