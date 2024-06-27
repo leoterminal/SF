@@ -1,7 +1,9 @@
 
 "use client"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FiMinus, FiPlus } from "react-icons/fi";
+import AOS from 'aos';
+
 
 // Define the TypeScript type for your content
 type Content = {
@@ -14,6 +16,12 @@ const FaqSection = () => {
   const [currentHeader, setCurrentHeader] = useState<number | null>(null);
   const [currentHeaderOpen, setCurrentHeaderOpen] = useState<boolean>(false);
   const [selectedCategory, setSelectedCategory] = useState<string>("General");
+
+  useEffect(()=>{
+    AOS.init({
+      duration: 1300,
+    })
+  },[])
 
   const tabs: Content[] = [
     {
@@ -117,7 +125,7 @@ const FaqSection = () => {
 
   return (
     <>
-      <section className="mt-11 overflow-hidden">
+      <section className="mt-11 overflow-hidden"   data-aos="fade-up">
         <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto flex flex-col items-center justify-between mb-11">
           <div className=" text-center">
             <p className="text-primary_brown lg:text-xl text-lg font-semibold">

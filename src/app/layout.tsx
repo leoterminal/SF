@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 
 
+
 const poppins = Poppins({
   subsets:['latin'],
   display: 'swap',
@@ -11,7 +12,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "SFX Change",
-  description: "Best Money App",
+  description: "A Blockchain payment app built to optimize and offer, financial services to African diaspora in Turkiye.",
+  icons:{
+    icon:['/favicon.ico?v=4']
+  }
 };
 
 interface RootLayoutProps{

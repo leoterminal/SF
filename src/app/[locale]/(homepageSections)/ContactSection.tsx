@@ -1,15 +1,24 @@
 "use client"
 import 'react-phone-number-input/style.css';
 import PhoneInput from 'react-phone-number-input';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaLocationDot } from 'react-icons/fa6';
 import { RiWhatsappFill } from 'react-icons/ri';
+import AOS from 'aos';
+
 
 const ContactSection = () => {
     const [value, setValue] = useState('');
 
+    useEffect(()=>{
+        AOS.init({
+          duration: 1200,
+          delay:50,
+        })
+      },[])
+
     return (
-        <section className="bg-[#f7f3ff] lg:mb-8 mb-16">
+        <section className="bg-[#f7f3ff] lg:mb-8 mb-16 overflow-x-hidden" data-aos="fade-up">
             <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto">
                 <div className="lg:mt-8 mt-16 text-center">
                     <p className="text-primary_green lg:text-xl text-lg font-semibold">CONTACT US</p>
@@ -43,30 +52,31 @@ const ContactSection = () => {
                             <form className="mt-8 space-y-4">
                                 <div className="flex flex-col">
                                     <label htmlFor="name">Your Name</label>
-                                    <input type="text" className="border-b border-green-600 py-2 bg-transparent" placeholder="e.g Kolawole Michael" />
+                                    <input type="text" className="border-b border-green-600 py-2 focus:border-none focus:border-transparent bg-transparent focus:outline-none" placeholder="e.g Kolawole Michael" />
                                 </div>
 
                                 <div className="flex flex-col">
                                     <label htmlFor="email">Email</label>
-                                    <input type="email" className="border-b border-green-600 py-2 bg-transparent" placeholder="michael_ei@gmail.com" />
+                                    <input type="email" className="border-b border-green-600 py-2 focus:border-none focus:border-transparent bg-transparent focus:outline-none" placeholder="e.g michael_ei@gmail.com" />
                                 </div>
 
                                 <div className="flex flex-col">
                                     <label htmlFor="phone">Phone Number</label>
                                     <PhoneInput
-                                        placeholder="Enter phone number"
-                                        value={value}
-                                        onChange={setValue}
-                                        inputProps={{ className: 'bg-red-600' }}
-                                    />
+                                    international
+                                    defaultCountry="TR"
+                                    value={value}
+                                    placeholder="wqfdqfqfqfwq"
+                                    onChange={setValue}/>
+                                    
                                 </div>
 
                                 <div className="flex flex-col">
                                     <label htmlFor="message">Message</label>
-                                    <textarea className="border-b border-green-600 py-2 bg-transparent h-14 resize-none"></textarea>
+                                    <textarea className="border-b border-green-600 py-2 focus:border-none focus:border-transparent bg-transparent focus:ring-2 focus:ring-green-600 h-14 resize-none"></textarea>
                                 </div>
 
-                                <button className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors duration-300">
+                                <button className="bg-white text-black font-semibold  py-2 px-16 rounded-[30px] transition-colors duration-300">
                                     Send Message
                                 </button>
                             </form>

@@ -1,20 +1,28 @@
-
-'use client';
-
-import { useRouter } from 'next/navigation';
-import { usePathname } from 'next/navigation';
+'use client'
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const LanguageSwitcher = () => {
   const router = useRouter();
-  const pathname = usePathname();
-  const changeLanguage = (locale: string) => {
-    router.push(`/${locale}${pathname}`);
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true); // Set isClient to true when component mounts on the client
+  }, []);
+
+    const changeLanguage = (locale: string) => {
+      const regex = /^\/(tr|en)/;
+      const pathRefine= window.location.pathname.replace(regex, '');
+      const newPath = `/${locale}${pathRefine}`;
+      router.push(newPath);
   };
+  if (!isClient) return null; // Render nothing during SSR
 
   return (
-    <div>
-      <button onClick={() => changeLanguage('en')}>English</button>
-      <button onClick={() => changeLanguage('tr')}>Türkçe</button>
+    <div className="flex items-center">
+      <div className="font-semibold text-primary_purple text-lg cursor-pointer" onClick={() => changeLanguage(window.location.pathname.includes('/tr') ? 'en' : 'tr')}>
+      {window.location.pathname.includes('/tr') ? 'EN' : 'TR'}
+    </div>
     </div>
   );
 };

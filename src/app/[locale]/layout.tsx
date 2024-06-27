@@ -4,6 +4,8 @@ import "./global.css";
 import Navbar from "../components/Navbar";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { NextIntlClientProvider, useMessages } from "next-intl";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 const poppins = Poppins({
@@ -14,7 +16,10 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "SFX Change",
-  description: "Best Money App",
+  description: "A Blockchain payment app built to optimize and offer, financial services to African diaspora in Turkiye.",
+  icons:{
+    icon:['/favicon.ico?v=4']
+  }
 };
 
 interface RootLayoutProps{

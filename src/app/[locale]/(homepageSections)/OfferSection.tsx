@@ -1,6 +1,8 @@
 'use client'
 import { useTranslations } from 'next-intl';
 import { useEffect, useState } from 'react';
+import AOS from 'aos';
+
 
 interface Offer {
   image: string;
@@ -25,16 +27,16 @@ const OfferSection = () => {
     },
     {
       image: "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718958497/image_46_fcwmak.png",
-      title: t('feature1.title'),
-      subtitle: t('feature1.subtitle'),
+      title: t('feature2.title'),
+      subtitle: t('feature2.subtitle'),
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet malesuada est. Morbi eu velit ex. Maecenas eget accumsan nibh, sed ultricies lacus. Sed luctus quam eu aliquam lacinia.",
       bgColor: "primary_green",
       dotColor: "#32cd32",
     },
     {
       image: "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718958498/image_47_fov33t.png",
-      title: t('feature1.title'),
-      subtitle: t('feature1.subtitle'),
+      title: t('feature3.title'),
+      subtitle: t('feature3.subtitle'),
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet malesuada est. Morbi eu velit ex. Maecenas eget accumsan nibh, sed ultricies lacus. Sed luctus quam eu aliquam lacinia.",
       bgColor: "primary_purple",
       dotColor: "#8B4FBd",
@@ -54,9 +56,17 @@ const OfferSection = () => {
          );
        }
      }, 6000);
- 
+
+     
      return () => clearInterval(interval);
-   }, [isPaused, offers.length]);
+    }, [isPaused, offers.length]);
+
+
+    useEffect(()=>{
+     AOS.init({
+       duration: 900,
+     })
+   },[])
 
   // Function to handle click on dot
   const handleDotClick = (index: number) => {
@@ -64,7 +74,7 @@ const OfferSection = () => {
   };
 
   return (
-    <section className="bg-[#f7f3ff]">
+    <section className="bg-[#f7f3ff] overflow-hidden"  data-aos="fade-up">
       <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto flex flex-col items-center justify-between">
         <div className="lg:mt-8 mt-28 text-center">
           <p className="text-primary_brown lg:text-xl text-lg font-semibold">
@@ -73,7 +83,7 @@ const OfferSection = () => {
           <h2 className="font-semibold lg:text-5xl text-3xl">{t('title')}</h2>
         </div>
 
-        <div className="lg:ml-[180px] xl:relative mt-[100px] max-w-[1097px] bg-white min-h-[520px] rounded-[20px] flex lg:flex-row flex-col gap-8 justify-end items-center space-x-10 px-9 py-[50px]">
+        <div  data-aos="flip-left" className="lg:ml-[180px] xl:relative sm:mt-[100px] mt-20 max-w-[1097px] bg-white min-h-[520px] rounded-[20px] flex lg:flex-row flex-col gap-8 justify-end items-center space-x-10 px-9 py-[50px]">
           {/* Card with image */}
           <div
             style={{ backgroundColor: offers[selectedOfferIndex].dotColor }}

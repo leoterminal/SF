@@ -8,32 +8,32 @@
 }
 
 .bubble:nth-child(1) {
-  width: 380px;
-  height: 380px;
-  top: -1%;
+  width: 410px;
+  height: 410px;
+  top: 4%;
   left: -6%;
   animation-delay: 0s;
 }
 
 .bubble:nth-child(2) {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   top: 20%;
   left: 75%;
   animation-delay: 2s;
 }
 
 .bubble:nth-child(3) {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   top: 50%;
   left: 20%;
   animation-delay: 4s;
 }
 
 .bubble:nth-child(4) {
-  width: 380px;
-  height: 380px;
+  width: 410px;
+  height: 410px;
   top: 20%;
   right: -8%;
   animation-delay: 4s;
@@ -85,17 +85,17 @@
   }
 
   .bubble:nth-child(1){
-    top: -6%;
+    top: 2%;
     left: -2%;
   }
 
   .bubble:nth-child(2){
     top: 60%;
-    left: 50%;
+    left: 40%;
   }
 
   .bubble:nth-child(3){
-    top: 8%;
+    top: 90%;
     left: 30%;
   }
   .bubble:nth-child(4){
@@ -115,5 +115,32 @@
   .bubble:nth-child(3) {
     width: 30px;
     height: 30px;
+  }
+
+  .bubble:nth-child(1){
+    top: 2%;
+    left: -2%;
+  }
+
+  .bubble:nth-child(2){
+    top: 80%;
+    left: 50%;
+  }
+
+  .bubble:nth-child(3){
+    top: 10%;
+    left: 40%;
+  }
+  .bubble:nth-child(4){
+    top: 52%;
+    right: -12%;
+    z-index: 0;
+  }
+}
+@media (max-width: 980px) {
+
+  .bubble:nth-child(3){
+    top: 35%;
+    left: 17%;
   }
 }

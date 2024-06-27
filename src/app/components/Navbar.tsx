@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import Link from "next/link";
 // import { signOut, useSession } from "next-auth/react";
 
@@ -9,12 +9,35 @@ import { FaBars } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 
 const Navbar = () => {
   const t =useTranslations('NavBar')
 //   const { data: session }: any = useSession();
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   // const handleClick = useCallback(()=>)
+
+  const [scrolling, setScrolling] = useState(false);
+  const [scrollTop, setScrollTop] = useState(0);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  // Effect to handle scroll event
+  useEffect(() => {
+    const onScroll = (e:Event) => {
+      const target = e.target as HTMLDocument;
+      setScrollTop(target.documentElement.scrollTop);
+      setScrolling(target.documentElement.scrollTop > scrollTop);
+    };
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, [scrollTop]);
+
+  const navbarStyles = {
+    backgroundColor: scrolling || mobileMenuOpen ? "white" : "#f7f3ff",
+    transition: "background-color 0.3s ease",
+    zIndex: 50,
+  };
+
 
   const navigation = [
     // { name: "Home", href: "/" },
@@ -66,9 +89,9 @@ const Navbar = () => {
     </div>
                 */}
 
-      <header className="bg-white ">
+      <header className="sticky top-0" style={navbarStyles}>
         <nav
-          className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 lg:p-8 p-4 lg:px-8 gap-2 sticky top-0"
+          className="mx-auto flex max-w-7xl items-center justify-between gap-x-6 lg:p-8 p-4 lg:px-8 gap-2"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
@@ -93,19 +116,23 @@ const Navbar = () => {
               </Link>
             ))}
           </div>
+
+          
           <div className="flex flex-1 items-center justify-end gap-x-6">
            
             
                 <span className="ml-10 text-sm"></span>
-
-                <button
+                <LanguageSwitcher />
+                  <button
                   onClick={() => {
                    
                   }}
                   className="hidden lg:block lg:text-sm lg:font-semibold lg:text-primary_purple  px-10 py-3 rounded-[30px] border border-primary_purple"
                 >
                   {t('sign_in')}
-                </button>
+                </button> 
+
+
 
                 <div className="flex">
                   <button

@@ -25,7 +25,7 @@
      "feature2": {
         "image": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718958497/image_46_fcwmak.png",
         "title": "SIMPLIFIED TRADING",
-        "subtitle": "Over-the-Counter (OTC)",
+        "subtitle": "Swap",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet malesuada est. Morbi eu velit ex. Maecenas eget accumsan nibh, sed ultricies lacus. Sed luctus quam eu aliquam lacinia.",
         "bgColor": "primary_green",
         "dotColor": "#32cd32"
@@ -33,7 +33,7 @@
       "feature3":{
         "image": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718958498/image_47_fov33t.png",
         "title": "SIMPLIFIED TRADING",
-        "subtitle": "Over-the-Counter (OTC)",
+        "subtitle": "Send Money",
         "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sit amet malesuada est. Morbi eu velit ex. Maecenas eget accumsan nibh, sed ultricies lacus. Sed luctus quam eu aliquam lacinia.",
         "bgColor": "primary_purple",
         "dotColor": "#8c52ff"
