@@ -12,3 +12,6 @@ export default getRequestConfig(async ({locale}) => {
     messages: (await import(`../langTranslations/${locale}.json`)).default
   };
 });
+
+
+

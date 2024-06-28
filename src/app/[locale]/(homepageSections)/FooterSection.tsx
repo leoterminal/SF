@@ -1,9 +1,12 @@
+import Link from 'next/link';
 import React from 'react';
 import { AiFillTikTok } from 'react-icons/ai';
 import { FaCopyright, FaFacebookSquare } from 'react-icons/fa';
 import { FaLocationDot, FaSquareInstagram, FaSquarePhone, FaSquareXTwitter } from 'react-icons/fa6';
 
 const FooterSection = () => {
+  const year = new Date().getFullYear();
+
   return (
     <>
       <section className="bg-white sm:py-24 py-14">
@@ -42,37 +45,37 @@ const FooterSection = () => {
           <div className="lg:w-1/2 w-full grid grid-cols-2 lg:grid-cols-4 gap-10 text-[#708090]">
             <div className="space-y-5 ">
               <h3 className="text-black text-xl font-medium">Quick Links</h3>
-              <div>Home</div>
-              <div>About</div>
-              <div>Contact Us</div>
-              <div>Offers</div>
-              <div>Services</div>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Home</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>About</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Contact Us</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Offers</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Services</Link>
             </div>
 
             <div className="space-y-5">
               <h3 className="text-black text-xl font-medium">Useful Links</h3>
-              <div>Blog</div>
-              <div>Legal</div>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Blog</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Legal</Link>
             </div>
 
             <div className="space-y-5">
               <h3 className="text-black text-xl font-medium">Get Started</h3>
-              <div>Get Started</div>
-              <div>Sign in</div>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Get Started</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Sign In</Link>
             </div>
 
             <div className="space-y-5">
               <h3 className="text-black text-xl font-medium">Transactions</h3>
-              <div>Send Money</div>
-              <div>Trade</div>
-              <div>Swap</div>
-              <div>Withdraw</div>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Send Money</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Trade</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Swap</Link>
+              <Link href='/'  className='cursor-pointer hover:text-primary_purple block'>Withdraw</Link>
             </div>
           </div>
         </div>
 
         <div className="max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto text-[#708090] text-center sm:py-10 py-5 mt-12 border-t-2">
-          <h3 className="text-lg flex sm:items-center items-start justify-center gap-2"> <FaCopyright /> <span>All Rights Reserved of SFx Influencer 2024 </span></h3>
+          <h3 className="text-lg flex sm:items-center items-start justify-center gap-2"> <FaCopyright /> <span>All Rights Reserved of SFx Influencer {year} </span></h3>
           <p className="text-sm mt-2">
             <b>Disclaimer:</b> SFx offers its products and services in partnership with licensed transmitters in their respective jurisdictions. All trademarks and brand names belong to their respective owners. Use of these trademarks and brand names do not represent endorsement by or association with Shiga Digital Incl.
           </p>

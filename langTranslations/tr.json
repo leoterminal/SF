@@ -9,6 +9,32 @@
     "receive_money": "Para Al",
     "send_money": "Para Gönder"    
   },
+  "Services":{
+    "cta": "SUNDUĞUMUZ ÖZELLİKLER",
+    "title": "Hizmetlerimiz",
+    "learn_more": "Daha Fazla Öğren",
+    "service1": {
+    "icon": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719503953/ri_plane-line_ioprrm.png",
+    "title": "Seyahat Biletlerinizi Ayırtın",
+    "desc": "Yerel paranızı döviz bozdurma zahmetinden kurtulun, Turkiye'ye veya Afrika'ya dönüş uçuşunuz için ödeme yapmak. Sfx WhatsApp OTC hizmeti ile zaten ayırtılmış uçuşunuzu yerel paranızla bize ödeyebilirsiniz, biz de uçuşlarınızı USD olarak öderiz. Ayrıca uçuşlarınızı anında rezerve edip ödeyebiliriz."
+    },
+    "service2": {
+    "icon": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719503953/wpf_car-rental_omrane.png",
+    "title": "Kiralama Ödemelerinizi Yapın",
+    "desc": "Sfx OTC ile araba veya ev kiralama ödemelerinizi kolayca yapabilirsiniz. Yerel paranız veya USD (USDT ve USDC) cinsinden ödeme yapabilirsiniz, biz de ödemeyi alıcınıza işler ve düzenleriz."
+    },
+    "service3": {
+    "icon": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719503953/zondicons_education_ksjfxg.png",
+    "title": "Öğrenim Ücreti Ödemesi",
+    "desc": "Sfx ile yurt dışında Türkiye veya KKTC'deki kolej veya üniversite ödemelerinizi kolayca yapın. Yerel paranızla sorunsuz ve anında ödeme yapabilirsiniz. Sfx, üniversite ücretlerinizi Türk Lirası veya USD cinsinden düzenleyebilir. Bir metin mesajı göndermek kadar kolay."
+    },
+    "service4": {
+    "icon": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719503953/ion_water_cyc51l.png",
+    "title": "Fatura Ödemelerinizi Yapın",
+    "desc": "Turkiye ve KKTC'de elektrik, su ve belediye faturalarınızı Sfx üzerinden sorunsuz ödeyin. WhatsApp üzerinden bize mesaj gönderin ve faturalarınızı ödemek için birçok uygun yöntemi keşfedin."
+    }
+    },
+
   "Offers": {
     "cta": "SUNDUĞUMUZ ÖZELLİKLER",
     "title": "Bizim Tekliflerimiz",

@@ -62,12 +62,7 @@ const ContactSection = () => {
 
                                 <div className="flex flex-col">
                                     <label htmlFor="phone">Phone Number</label>
-                                    <PhoneInput
-                                    international
-                                    defaultCountry="TR"
-                                    value={value}
-                                    placeholder="wqfdqfqfqfwq"
-                                    onChange={setValue}/>
+                                    <input type="tel" className="border-b border-green-600 py-2 focus:border-none focus:border-transparent bg-transparent focus:outline-none" placeholder="e.g +90 40000000" />
                                     
                                 </div>
 

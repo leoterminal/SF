@@ -15,6 +15,7 @@ import FooterSection from './(homepageSections)/FooterSection';
 const Home = () => {
   const t = useTranslations('HeroSection');
 
+
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isReceiveDropdownOpen, setIsReceiveDropdownOpen] = useState(false);
 
@@ -55,12 +56,16 @@ const Home = () => {
   const receiveDropdownPosition = calculateReceiveDropdownPosition();
 
   const flagStyles = [
-    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_37_imv7oi.png', style: { top: '10%', left: '5%' } },
-    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_29_kmdjhm.png', style: { top: '25%', left: '20%' } },
-    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_30_dqlseh.png', style: { top: '45%', left: '10%' } },
-    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_32_s32lbk.png', style: { top: '50%', left: '40%' } },
-    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_38_anghil.png', style: { top: '65%', left: '2%' } },
-    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_36_ieqks2.png', style: { top: '70%', left: '30%' } },
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_37_imv7oi.png'},
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_29_kmdjhm.png'},
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_30_dqlseh.png' },
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_32_s32lbk.png' },
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_38_anghil.png' },
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719412758/image_36_ieqks2.png' },
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719575234/kenya-flag-circle-icon_zkb6fr.png' },
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719575115/nigeria-flag-round-circle-icon_fsomcp.png' },
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719578676/ghana-flag-round-circle-icon_y4ocfh.png' },
+    { src: 'https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719578955/south-africa-flag-round-circle-icon_fabzbm.png' },
   ];
 
 
@@ -74,7 +79,7 @@ const Home = () => {
             <Bubble key={index} />
           ))}
         </div>
-        <h1 className="lg:text-6xl text-4xl font-extrabold lg:max-w-[550px] max-w-[400px] text-center mt-12">
+        <h1 className="lg:text-6xl text-4xl font-extrabold lg:max-w-[550px] max-w-[400px] text-center mt-16">
           <span className="text-primary_purple  z-10">{t('cta')}</span> {t('title')}
         </h1>
         <p className="text-[#708090] lg:text-2xl text-lg text-center lg:max-w-[500px] max-w-[350px] p-2  z-10">
@@ -112,6 +117,7 @@ const Home = () => {
               target="_blank"
               className="flex items-center gap-3 py-4 px-12 lg:px-4 hover:bg-slate-100"
             >
+            
               <div>
                 {' '}
                 <IoLogoWhatsapp className="text-green-500 text-4xl" />
@@ -142,7 +148,7 @@ const Home = () => {
             style={{ top: receiveDropdownPosition.top, left: receiveDropdownPosition.left }}
           >
             <a
-              href="https://example.com/receive"
+              href="https://wa.me/message/TJ6SGN6IUGTCP1"
               target="_blank"
               className="flex items-center gap-3 py-4 px-12 lg:px-4 hover:bg-slate-100"
             >
@@ -182,10 +188,7 @@ const Home = () => {
         </div>
         </marquee>
 
-        <div className="lg:mt-8 mt-28 text-center"  data-aos="fade-up">
-          <p className="text-primary_green lg:text-xl text-lg font-semibold">PAY FOR ESSENTIAL SERVICES</p>
-          <h2 className="font-semibold lg:text-5xl text-3xl">Services we render</h2>
-        </div>
+        
 
         <ServicesSection />
         <OfferSection />

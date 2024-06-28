@@ -33,20 +33,26 @@ const FaqSection = () => {
     {
       header: "Who can use the SFX App?",
       content:
-        "The SFX App is a fintech solution designed specifically for African students in Turkey, enabling users to trade their local currencies for USDT stablecoin, pay bills, and transfer money to family and friends either in USDT or their local currencies.",
+        "The app is primarily aimed at African students residing in Turkey but can be used by any individual who meets the registration criteria, including possessing valid identification and being of legal age as defined by Turkish regulations.",
+      category: "General",
+    },
+    {
+      header: "What African currencies are currently eligible to transact using the app?",
+      content:
+        "Nigeria, Ghana, Uganda, Kenya, Zambia, South Africa, Rwanda,Tanzania.",
       category: "General",
     },
     {
       header: "Is the SFX App secure?",
       content:
-        "The SFX App is a fintech solution designed specifically for African students in Turkey, enabling users to trade their local currencies for USDT stablecoin, pay bills, and transfer money to family and friends either in USDT or their local currencies.",
+        "Yes, the SFX App uses advanced security protocols to ensure all transactions and personal data are protected. This includes encryption, secure login processes, and continuous monitoring for potential security threats. You can check out our very detailed SFX policy at https://policy.sfxchange.co/",
       category: "General",
     },
     {
       header: "How do I convert my local currency to USDT on the SFX App?",
       content:
-        "The SFX App is a fintech solution designed specifically for African students in Turkey, enabling users to trade their local currencies for USDT stablecoin, pay bills, and transfer money to family and friends either in USDT or their local currencies.",
-      category: "General",
+        "To convert your local currency to USDT, simply log into your account, navigate to the Fund/Withdraw section, enter the amount you wish to convert, and confirm your transaction. The conversion rates are updated in real-time based on current market rates.",
+      category: "Money Transfer",
     },
     {
       header: "Are there any fees associated with currency conversion?",
@@ -58,7 +64,7 @@ const FaqSection = () => {
       header: "How can I pay bills using the SFX App?",
       content:
         "The SFX App provides a simple bill payment interface where you can select the biller, enter the amount, and proceed with the payment using your local currency or USDT stablecoin.",
-      category: "General",
+      category: "Bill Payment",
     },
     {
       header: "What types of bills can I pay with the SFX App?",
@@ -87,7 +93,7 @@ const FaqSection = () => {
     {
       header: " What should I do if I encounter a problem with the app?",
       content:
-        "If you experience any technical difficulties, please contact our support team via the app's 'Help' section or email us directly at help@sfxchange.com. Our team is available 24/7 to assist you.",
+        "If you experience any technical difficulties, please contact our support team via the app's 'Help' section or email us directly at support@sfx.com or +90 533 883 31 99 on WhatsApp. Our team is available 24/7 to assist you.",
       category: "Support",
     },
     {
@@ -96,20 +102,16 @@ const FaqSection = () => {
       category: "Support",
     },
     {
-      header: "What is the SFx Whatsapp OTC?",
-      content:" The Sfx Whatsapp OTC is a Whatsapp channel where you can access all SFx services conveniently, through your mobile chat messenger Whatsapp.",
+      header: "Are there any fees associated with currency conversion?",
+      content:"Yes, there is a minimal fee for currency conversion on the app. This fee is transparently displayed during the transaction process.",
       category: "OTC",
     },
     {
-      header: "What can I do on the Sfx Whatsapp OTC?",
-      content:"You can exchange your local currency, via Whatsapp and obtain USDT.You can make payment for your bills in Turkish Lira.You can make payment for your tuition and even book a flight ticket back home from Turkey to Africa and from Africa to Turkey.",
+      header: "How do I convert my local currency to USDT on the SFX App?",
+      content:"To convert your local currency to USDT, simply log into your account, navigate to the Fund Withdraw section, enter the amount you wish to convert, and confirm your transaction. The conversion rates are updated in real-time based on current market rates.",
       category: "OTC",
     },
-    {
-      header: " Is the SFx OTC Secure for transactions?",
-      content:" Yes, Due to Whatsapp End - End Encryption and our dedicated OTC manager, you are assured of a safe and secure online experience",
-      category: "OTC",
-    },
+   
   ];
 
   const categories = ["General", "Bill Payment", "Money Transfer", "Support", "OTC"];

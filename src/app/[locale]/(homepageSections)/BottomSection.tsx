@@ -3,7 +3,7 @@ import { FaApple, FaGooglePlay } from "react-icons/fa"
 const BottomSection = () => {
   return (
     <>
-    <section className="flex lg:flex-row flex-col-reverse lg:gap-4 gap-10 items-center justify-center bg-white max-w-[95vw] sm:max-w-[754px] xl:max-w-[1300px] w-full mx-auto min-h-[90vh] overflow-x-hidden">
+    <section className="flex lg:flex-row flex-col-reverse lg:gap-4 gap-10 items-center justify-center bg-white max-w-[95vw] sm:max-w-[754px] xl:max-w-[1220px] w-full mx-auto min-h-[90vh] overflow-x-hidden">
     <div className="mx-auto">
         <div  data-aos="zoom-in" className="lg:w-[348px] w-full flex items-center justify-center text-xl sm:mb-[94px] mb-12 rounded-[30px] bg-primary_green font-bold h-12 cursor-pointer">Coming Soon</div>
         <div className="text-[#9F9D9D] sm:text-xl text-sm font-semibold mb-2">OUR MOBILE APPLICATION - V2</div>

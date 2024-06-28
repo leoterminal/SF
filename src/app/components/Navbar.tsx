@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { FaXmark } from "react-icons/fa6";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
@@ -48,46 +48,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/*
-    <div>
-      <ul className="flex justify-between m-10 item-center">
-        <div>
-          <Link href="/">
-            <li>Home</li>
-          </Link>
-        </div>
-        <div className="flex gap-10">
-          <Link href="/dashboard">
-            <li>Dashboard</li>
-          </Link>
-          {!session ? (
-            <>
-              <Link href="/login">
-                <li>Login</li>
-              </Link>
-              <Link href="/register">
-                <li>Register</li>
-              </Link>
-            </>
-          ) : (
-            <>
-              {session.user?.email}
-              <li>
-                <button
-                  onClick={() => {
-                    signOut();
-                  }}
-                  className="p-2 px-5 -mt-1 bg-blue-800 rounded-full"
-                >
-                  Logout
-                </button>
-              </li>
-            </>
-          )}
-        </div>
-      </ul>
-    </div>
-                */}
 
       <header className="sticky top-0" style={navbarStyles}>
         <nav
@@ -104,17 +64,6 @@ const Navbar = () => {
                 alt="SFX logo"
               />
             </Link>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="text-sm font-semibold leading-6 text-gray-900"
-              >
-                {item.name}
-              </Link>
-            ))}
           </div>
 
           
@@ -137,11 +86,12 @@ const Navbar = () => {
                 <div className="flex">
                   <button
                     type="button"
-                    className="-m-2.5 inline-flex items-center justify-center p-2.5 text-gray-700 bg-[#8c52ff] rounded-full h-[55px] w-[55px]"
+                    className="-m-2.5 inline-flex items-center justify-center p-2.5 text-gray-700 bg-primary_purple rounded-full sm:h-[55px] sm:w-[55px] w-10 h-10"
                     onClick={() => setMobileMenuOpen(true)}
                   >
                     <span className="sr-only">Open main menu</span>
-                    <FaBars className="h-6 w-6 text-white" aria-hidden="true" />
+                   {mobileMenuOpen ? <FaTimes className="h-6 w-6 text-white" aria-hidden="true" /> :<FaBars className="h-6 w-6 text-white" aria-hidden="true" />} 
+
                   </button>
                 </div>
             
@@ -197,16 +147,7 @@ const Navbar = () => {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
                 <div className="space-y-2 py-6">
-                  {/* {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      onClick={() => setMobileMenuOpen(false)}
-                      href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                    >
-                      {item.name}
-                    </Link>
-                  ))} */}
+                 
                 </div>
               </div>
             </div>

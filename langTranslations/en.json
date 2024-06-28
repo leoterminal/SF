@@ -9,6 +9,34 @@
     "receive_money": "Receive Money",
     "send_money": "Send Money"    
   },
+
+"Services":{
+  "cta": "FEATURES WE OFFER",
+  "title": "Services we render",
+  "learn_more": "Learn More",
+  "service1": {
+    "icon": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719503953/ri_plane-line_ioprrm.png",
+    "title": "Book your Travel Tickets",
+    "desc": "Imagine not having to worry about the hassle of exchanging your local currency to pay for your flight to Turkiye or back home to Africa. Through the Sfx WhatsApp OTC service, you can pay for your already booked flight by paying us in your local currency, and we will pay for your flights in USD. We can also book and pay for your flights instantly."
+},
+"service2": {
+  "icon": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719503953/wpf_car-rental_omrane.png",
+  "title": "Make Rental Payments",
+  "desc": "Easily make your car rental or home rental payments through Sfx OTC. You can pay in your local currency or USD (USDT and USDC), and we will process and settle the payment to your recipient."
+},
+"service3": {
+  "icon": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719503953/zondicons_education_ksjfxg.png",
+  "title": "Tuition Fee Payment",
+  "desc": "Make your Turkish or TRNC college or university payments abroad with Sfx via our OTC service. Pay in your local currency seamlessly and instantly. Sfx can settle your university fees in Turkish Lira or USD. It's as easy as sending a text message."
+},
+"service4": {
+  "icon": "https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719503953/ion_water_cyc51l.png",
+  "title": "Pay for Utility Bills",
+  "desc": "Pay for your utility bills—electricity, water, and municipality bills—in Turkiye and TRNC seamlessly through Sfx. Send us a message on WhatsApp and discover the many convenient ways to pay your bills."
+}
+
+},
+
   "Offers": {
     "cta": "FEATURES WE OFFER",
     "title": "Our Offers",

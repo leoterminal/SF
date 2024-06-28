@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./global.css";
 import Navbar from "../components/Navbar";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { NextIntlClientProvider, useMessages } from "next-intl";
-import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 
