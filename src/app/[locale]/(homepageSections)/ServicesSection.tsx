@@ -48,7 +48,7 @@ const ServicesSection = () => {
         </div>
     <section className="bg-white min-h-[90vh] w-full relative mt-10"  data-aos="fade-up">
       <div className="flex lg:flex-row flex-col-reverse justify-center items-center max-w-[95vw] sm:max-w-[754px] xl:max-w-[1240px] w-full mx-auto">
-        <div className="shadow-xl shadow-black mb-8 grid grid-cols-1 justify-center gap-4 lg:w-1/2 w-full">
+        <div className="shadow-lg shadow-purple-400 mb-8 grid grid-cols-1 justify-center gap-4 lg:w-1/2 w-full lg:mr-16 mr-2">
           {services.map((faq, index) => (
             <div key={index} className="-mb-8 w-full rounded-3xl bg-white">
               {/* FAQ Question */}
@@ -97,11 +97,11 @@ const ServicesSection = () => {
             </div>
           ))}
         </div>
-        <div  className="lg:w-1/2 w-full">
+        <div  className="lg:ml-6 ml-0 lg:w-1/2 w-full">
           <img  
         data-aos="fade-down"
         data-aos-easing="linear"
-        data-aos-duration="1500" src="https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718958498/Rectangle_39_yg5x95.png" alt="img" /> </div>
+        data-aos-duration="1500" src="https://res.cloudinary.com/ddrsfwzlk/image/upload/v1718803443/SFx_Multiscreen_Phone_Mockup_uctfun.svg" alt="img" /> </div>
       </div>
       <img
         src="https://res.cloudinary.com/dzwnf9mjr/image/upload/v1718713898/image_44_bvaaps.png"

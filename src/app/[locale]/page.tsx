@@ -74,6 +74,20 @@ const Home = () => {
     <>
       <main className="flex min-h-screen flex-col items-center justify-start gap-5 bg-[#f7f3ff]">
 
+         {/* Flags */}
+       <marquee>
+        <div className='flex items-center gap-28 mt-6'>
+       {flagStyles.map((flag, index) => (
+          <img
+            key={index}
+            src={flag.src}
+            className=" w-12 h-12 z-30 "
+            alt={`Flag ${index}`}
+          />
+        ))}
+        </div>
+        </marquee>
+
         <div className={styles.bubbleContainer}>
           {[...Array(5)].map((_, index) => (
             <Bubble key={index} />
@@ -174,19 +188,7 @@ const Home = () => {
             </div>
           </div>
         )}
-        {/* Flags */}
-       <marquee>
-        <div className='flex items-center gap-28 mt-6'>
-       {flagStyles.map((flag, index) => (
-          <img
-            key={index}
-            src={flag.src}
-            className=" w-12 h-12 z-30 "
-            alt={`Flag ${index}`}
-          />
-        ))}
-        </div>
-        </marquee>
+       
 
         
 
