@@ -15,7 +15,7 @@ const FooterSection = () => {
             <img
               src="https://res.cloudinary.com/ddrsfwzlk/image/upload/v1719308408/SFx_Brand_Identity_Design_1_1_tzyqpx.png"
               alt="SFX logo"
-              className="w-[150px] h-[56px] mx-auto lg:mx-0"
+              className="w-[150px] h-[56px] mx-0"
             />
 
             <div className="flex items-center justify-start gap-2 mt-4 text-[#708090]">

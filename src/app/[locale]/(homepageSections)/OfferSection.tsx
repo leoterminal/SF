@@ -106,7 +106,7 @@ const OfferSection = () => {
           </div>
 
           {/* Text content */}
-          <div className="flex lg:flex-row flex-col-reverse justify-between items-start lg:w-1/2 w-full gap-6">
+          <div className="flex lg:flex-row flex-col-reverse justify-between lg:items-start items-center lg:w-1/2 w-full gap-6">
             {offers.map((offer, index) => (
               <div
                 key={index}
@@ -120,7 +120,7 @@ const OfferSection = () => {
                   </div>
                   <div className="text-2xl">{offer.subtitle}</div>
                 </h3>
-                <div className="w-2/3 text-lg font-normal text-[#708090] mb-6">
+                <div className="lg:w-2/3 w-full text-lg font-normal text-[#708090] mb-6">
                   {offer.text}
                 </div>
 
@@ -135,7 +135,7 @@ const OfferSection = () => {
             ))}
 
             {/* Small boxes (dots) */}
-            <div className="flex lg:flex-col flex-row justify-center items-start gap-8 ">
+            <div className="flex lg:flex-col flex-row justify-start items-start gap-8 ">
               {offers.map((offer, index) => (
                 <div
                   key={index}
@@ -145,7 +145,7 @@ const OfferSection = () => {
                   lg:w-5 w-14 lg:h-14 h-5 bg-${offers[selectedOfferIndex].bgColor}`
                       : `bg-gray-400 w-5 h-5`
                   }`}
-                   style={{ backgroundColor: offers[selectedOfferIndex].dotColor }}
+                  //  style={{ backgroundColor: offers[selectedOfferIndex].dotColor }}
                   onClick={() => handleDotClick(index)}
                   onMouseEnter={() => setIsPaused(true)}
                   onMouseLeave={() => setIsPaused(false)}

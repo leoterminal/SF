@@ -82,7 +82,7 @@ const ServicesSection = () => {
                     <p className="tracking-[0.2px] py-6font-normal sm:text-base text-sm">{faq.description}</p>
                   <div
                   
-                  className={`${index ==1 ?` text-primary_green`:''} ${index ==2 ?` text-primary_brown`:''} ${index ==3 ?` text-primary_darkblue`:''} ${index ==0 ?` text-primary_purple`:''} w-[300px] rounded-[30px] bg-white   font-semibold flex items-center justify-center h-[48px] text-xl shadow-lg cursor-pointer mt-4`}
+                  className={`${index ==1 ?` text-primary_green`:''} ${index ==2 ?` text-primary_brown`:''} ${index ==3 ?` text-primary_darkblue`:''} ${index ==0 ?` text-primary_purple`:''} w-[300px] rounded-[30px] bg-white   font-semibold flex items-center justify-center h-[48px] text-xl shadow-lg cursor-pointer my-4`}
                  
                 >
                 {t('learn_more')}

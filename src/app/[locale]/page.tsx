@@ -11,6 +11,7 @@ import FaqSection from './(homepageSections)/FaqSection';
 import ContactSection from './(homepageSections)/ContactSection';
 import BottomSection from './(homepageSections)/BottomSection';
 import FooterSection from './(homepageSections)/FooterSection';
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   const t = useTranslations('HeroSection');
@@ -72,11 +73,13 @@ const Home = () => {
 
   return (
     <>
+      <Navbar />
+
       <main className="flex min-h-screen flex-col items-center justify-start gap-5 bg-[#f7f3ff]">
 
          {/* Flags */}
        <marquee>
-        <div className='flex items-center gap-28 mt-6'>
+        <div className='flex items-center gap-28 mt-6  z-40'>
        {flagStyles.map((flag, index) => (
           <img
             key={index}

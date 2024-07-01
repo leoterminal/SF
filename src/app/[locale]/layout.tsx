@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./global.css";
-import Navbar from "../components/Navbar";
 import { NextIntlClientProvider, useMessages } from "next-intl";
 import 'aos/dist/aos.css'; 
 
@@ -32,8 +31,6 @@ export default function RootLayout({children, params:{locale},}: Readonly<RootLa
     <html lang={locale}>
       <NextIntlClientProvider messages={messages}>
       <body className={poppins.className}>
-        {/* <LanguageSwitcher /> */}
-      <Navbar />
         {children}
         </body>
         </NextIntlClientProvider >
